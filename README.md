@@ -9,8 +9,7 @@
 <body>
 
 <!-- LOGO ENSA -->
-<img src="logo-ensa-berrechid.png" alt="ENSA Logo" style="position: fixed; top: 15px; right: 15px; height: 50px; width: auto; z-index: 1000; filter: drop-shadow(0 4px 10px rgba(0,0,0,0.3));">
-
+<img src="logo-ensa-berrechid.png" alt="ENSA Logo" style="position: fixed; top: 15px; right: 15px; height: 40px; width: auto; z-index: 1000; filter: drop-shadow(0 4px 10px rgba(0,0,0,0.3));">
 <!-- BOUTON RETOUR -->
 <button class="back-btn" id="backBtn" onclick="goBackToLanding()" style="display: none;">← Retour</button>
 
@@ -19,7 +18,7 @@
     <div class="landing-content">
         <div class="landing-header">
             <div class="ai-badge">
-                <span class="sparkle">✨</span> Powered by AI <span class="sparkle">✨</span>
+                <span class="sparkle"></span> Powered by AI <span class="sparkle"></span>
             </div>
             <h1 class="landing-title">
                 <span class="gradient-text">Campus Smart</span>
@@ -28,7 +27,7 @@
         </div>
 <div class="qr-welcome-card">
     <div class="qr-left">
-        <h2>🎓 Accès Rapide</h2>
+        <h2> Accès Rapide</h2>
         <p>Scannez ce QR Code avec votre smartphone pour accéder à Campus Smart</p>
         <div id="appQRCode" class="app-qr-display"></div>
         <p class="qr-url">Accès direct à la plateforme</p>
@@ -37,7 +36,7 @@
     <div class="qr-divider"></div>
     
     <div class="qr-right">
-        <h2>💻 Connexion Web</h2>
+        <h2> Connexion Web</h2>
         <p>Ou connectez-vous directement depuis votre navigateur</p>
         <button class="access-btn" onclick="goToLogin()">
             <span>Accéder à la plateforme</span>
@@ -46,15 +45,15 @@
         
         <div class="features-preview">
             <div class="feature-item">
-                <span class="feature-icon">🤖</span>
+                <span class="feature-icon"></span>
                 <span>Assistant IA</span>
             </div>
             <div class="feature-item">
-                <span class="feature-icon">📚</span>
+                <span class="feature-icon"></span>
                 <span>Bibliothèque Digitale</span>
             </div>
             <div class="feature-item">
-                <span class="feature-icon">🎯</span>
+                <span class="feature-icon"></span>
                 <span>Gestion Intelligente</span>
             </div>
         </div>
@@ -63,7 +62,7 @@
             <div class="qr-divider"></div>
             
             <div class="qr-right">
-                <h2>💻 Connexion Web</h2>
+                <h2> Connexion Web</h2>
                 <p>Ou connectez-vous directement depuis votre navigateur</p>
                 <button class="access-btn" onclick="goToLogin()">
                     <span>Accéder à la plateforme</span>
@@ -76,11 +75,11 @@
                         <span>Assistant IA</span>
                     </div>
                     <div class="feature-item">
-                        <span class="feature-icon">📚</span>
+                        <span class="feature-icon"></span>
                         <span>Bibliothèque Digitale</span>
                     </div>
                     <div class="feature-item">
-                        <span class="feature-icon">🎯</span>
+                        <span class="feature-icon"></span>
                         <span>Gestion Intelligente</span>
                     </div>
                 </div>
@@ -93,7 +92,7 @@
     </div>
 </div>
 
-<!-- 🔐 LOGIN PAGE -->
+<!--  LOGIN PAGE -->
 <div class="login-container" id="login" style="display: none;">
     <div class="login-left">
         <h2>WELCOME</h2>
@@ -105,7 +104,7 @@
         <h2>LOGIN</h2>
 
         <div class="login-tabs">
-            <button class="tab-btn active" onclick="switchLoginTab('manual')">🔑 Code</button>
+            <button class="tab-btn active" onclick="switchLoginTab('manual')"> Code</button>
             <button class="tab-btn" onclick="switchLoginTab('qr')">📱 QR Code</button>
         </div>
 
@@ -118,7 +117,7 @@
 
         <div id="qrLogin" class="login-method">
             <div id="qrReader" class="qr-scanner">
-                <div class="qr-scanner-icon">📷</div>
+                <div class="qr-scanner-icon"></div>
                 <p>Scanner votre QR Code</p>
                 <button onclick="scanQRCode()">Activer la caméra</button>
             </div>
@@ -132,11 +131,11 @@
     </div>
 </div>
 
-<!-- 🌐 APP -->
+<!--  APP -->
 <div id="app" style="display:none">
     <div class="app-header">
         <h1>
-            <span class="ai-icon">🤖</span>
+            <span class="ai-icon"> </span>
             <span class="gradient-text">Campus Smart</span>
             <span class="ai-badge-small">AI</span>
         </h1>
@@ -145,7 +144,7 @@
                 👤 <span id="studentName"></span>
             </div>
             <div class="points-badge">
-                ⭐ <span id="points">0</span> Points
+                 <span id="points">0</span> Points
             </div>
             <button class="logout-btn" onclick="logout()">🚪 Déconnexion</button>
         </div>
@@ -155,7 +154,7 @@
     <div id="dashboard" class="box dashboard">
         <h2>🎓 Tableau de Bord Intelligent</h2>
         <p class="dashboard-subtitle">
-            <span class="ai-indicator-small">🤖</span> 
+            <span class="ai-indicator-small"> </span> 
             Votre assistant éducatif alimenté par l'IA
         </p>
         <div class="grid">
@@ -234,19 +233,19 @@
     <div id="calendar" class="box" style="display:none">
         <h2>📅 Calendrier Académique 2025-2026</h2>
         <div class="calendar-controls">
-            <button onclick="changeMonth(-1)">◀️ Mois Précédent</button>
+            <button onclick="changeMonth(-1)"> Mois Précédent</button>
             <h3 id="currentMonth"></h3>
-            <button onclick="changeMonth(1)">Mois Suivant ▶️</button>
+            <button onclick="changeMonth(1)">Mois Suivant </button>
         </div>
         <div class="calendar-grid" id="calendarGrid"></div>
         <div class="calendar-legend">
-            <h3>📌 Légende</h3>
+            <h3> Légende</h3>
             <div class="legend-item"><span class="legend-color vacation"></span> Vacances</div>
             <div class="legend-item"><span class="legend-color exam"></span> Examens</div>
             <div class="legend-item"><span class="legend-color event"></span> Événements importants</div>
         </div>
         <div class="upcoming-events">
-            <h3>🔔 Événements à venir</h3>
+            <h3> Événements à venir</h3>
             <ul id="upcomingEvents"></ul>
         </div>
         <button onclick="showSection('dashboard')">⬅ Retour</button>
@@ -263,13 +262,13 @@
                 </div>
                 <div id="qrCodeDisplay" class="qr-display"></div>
                 <div class="qr-info">
-                    <p>💡 Utilisez ce QR code pour vous connecter rapidement</p>
-                    <p>⭐ Points: <span id="qrPoints"></span></p>
+                    <p> Utilisez ce QR code pour vous connecter rapidement</p>
+                    <p> Points: <span id="qrPoints"></span></p>
                 </div>
                 <div class="qr-actions">
-                    <button onclick="downloadQRCode()">💾 Télécharger</button>
-                    <button onclick="printQRCode()">🖨️ Imprimer</button>
-                    <button onclick="shareQRCode()">📤 Partager</button>
+                    <button onclick="downloadQRCode()"> Télécharger</button>
+                    <button onclick="printQRCode()"> Imprimer</button>
+                    <button onclick="shareQRCode()">  Partager</button>
                 </div>
             </div>
         </div>
@@ -278,19 +277,19 @@
 
     <!-- ASSISTANT IA -->
     <div id="assistant" class="box" style="display:none">
-        <h2>🤖 Assistant IA Éducatif</h2>
+        <h2> Assistant IA Éducatif</h2>
         <p class="section-subtitle">Posez vos questions académiques, obtenez des réponses instantanées</p>
         <div class="ai-chat-container">
             <div class="ai-chat-messages" id="chatMessages">
                 <div class="ai-message">
-                    <div class="ai-avatar">🤖</div>
+                    <div class="ai-avatar"> </div>
                     <div class="message-content">
                         <p><strong>Assistant Campus Smart</strong></p>
                         <p>Bonjour ! Je suis votre assistant IA. Comment puis-je vous aider aujourd'hui ?</p>
                         <div class="quick-actions">
-                            <button onclick="askAI('Quels sont mes prochains cours ?')">📅 Mes cours</button>
-                            <button onclick="askAI('Recommande-moi des livres')">📚 Livres</button>
-                            <button onclick="askAI('Mes statistiques')">📊 Stats</button>
+                            <button onclick="askAI('Quels sont mes prochains cours ?')"> Mes cours</button>
+                            <button onclick="askAI('Recommande-moi des livres')"> Livres</button>
+                            <button onclick="askAI('Mes statistiques')"> Stats</button>
                         </div>
                     </div>
                 </div>
@@ -299,7 +298,7 @@
                 <input type="text" id="aiInput" placeholder="Posez votre question...">
                 <button onclick="sendAIMessage()">
                     <span>Envoyer</span>
-                    <span class="ai-sparkle">✨</span>
+                    <span class="ai-sparkle"> </span>
                 </button>
             </div>
         </div>
