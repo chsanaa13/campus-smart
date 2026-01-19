@@ -9,7 +9,7 @@ window.addEventListener('DOMContentLoaded', function() {
     
     // Generate QR code - Redirige vers la page de login
     // Generate QR code - Redirige vers login automatiquement sur mobile
-const currentURL = window.location.href.split('?')[0] + '?qr=1';
+const loginURL = "https://chsanaa13.github.io/campus-smart/";
 new QRCode(document.getElementById("appQRCode"), {
     text: currentURL,
     width: 200,
@@ -1069,3 +1069,4 @@ window.addEventListener('DOMContentLoaded', function() {
         goToLogin();
     }
 });
+
