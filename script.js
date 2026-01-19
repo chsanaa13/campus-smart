@@ -7,17 +7,16 @@ window.addEventListener('DOMContentLoaded', function() {
     document.getElementById("app").style.display = "none";
     document.getElementById("backBtn").style.display = "none";
     
-    // Generate QR code - Redirige vers la page de login
-    // Generate QR code - Redirige vers login automatiquement sur mobile
-const loginURL = "https://chsanaa13.github.io/campus-smart/";
-new QRCode(document.getElementById("appQRCode"), {
-    text: currentURL,
-    width: 200,
-    height: 200,
-    colorDark: "#6366f1",
-    colorLight: "#ffffff",
-    correctLevel: QRCode.CorrectLevel.H
-});
+    // Generate QR code - Redirige vers la page GitHub Pages
+    const currentURL = "https://chsanaa13.github.io/campus-smart/";
+    new QRCode(document.getElementById("qrCodeDisplay"), {
+        text: currentURL,
+        width: 200,
+        height: 200,
+        colorDark: "#6366f1",
+        colorLight: "#ffffff",
+        correctLevel: QRCode.CorrectLevel.H
+    });
 });
 // Navigate to login page
 function goToLogin() {
@@ -1069,4 +1068,5 @@ window.addEventListener('DOMContentLoaded', function() {
         goToLogin();
     }
 });
+
 
